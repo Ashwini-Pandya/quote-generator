@@ -24,15 +24,12 @@ function App() {
     <div className="container">
       <h1 className="title"> Random Quote-Generator </h1>
       <div className="quote-box">
-        <div className="container">
-          <h2 className="quote-txt"> {quotes.content} </h2>
-          <h2 className="quote-author"> ~ {quotes.author}</h2>
-        </div>
-
-        <button onClick={fetchData} disabled={loading}>
-          {loading ? "Loading..." : "Click to Change"}
-        </button>
+        <h2 className="quote-txt"> {quotes.content} </h2>
+        <h2 className="quote-author"> ~ {quotes.author}</h2>
       </div>
+      <button onClick={fetchData} disabled={loading}>
+        {loading ? "Loading..." : "Click to Change"}
+      </button>
     </div>
   );
 }

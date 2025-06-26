@@ -12,9 +12,14 @@ body, html {
 
 .container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
 }
 
-h1{
+.title{
   color: #4B3F72;
   margin-bottom: 40px;
   font-size: 40px;
@@ -26,7 +31,13 @@ h1{
   border: 1px solid #ccc; 
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  max-width: 600px;
+  width: 500px;
+  height: 250px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* text-align: center; */
 }
 
 .quote-txt{
@@ -40,6 +51,7 @@ h1{
   font-weight: bold;
   color: #5D3FD3;
   text-align: right;
+  width: 100%;
 }
 
 button{
@@ -57,56 +69,3 @@ button{
 button:hover{
   background-color: #CBAACB;
 }
-
-
-/* .main{
-  height: 100vh;
-  width: 100%;
-}
-
-.title{
-  padding: 20px 0px;
-  font-size: 50px;
-  display: flex;
-  justify-content: center;
-}
-
-.content{
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-  gap: 20px;
-}
-
-.container{
-  border: 1px solid black;
-  background-color: white;
-  border-radius: 8px;
-  padding: 10px 30px;
-  width: 100%;
-  max-width: 500px;
-}
-
-.conatiner .quote{
-  text-align: center;
-}
-
-.container .author{
-  text-align: end;
-}
-
-.btn {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  max-width: 600px;
-}
-
-button{
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 5px 10px;
-} */
