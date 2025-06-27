@@ -24,11 +24,14 @@ function App() {
     <div className="container">
       <h1 className="title"> Random Quote-Generator </h1>
       <div className="quote-box">
-        <h2 className="quote-txt"> {quotes.content} </h2>
-        <h2 className="quote-author"> ~ {quotes.author}</h2>
+        <h2 className="quote-txt"> "{quotes.content}" </h2>
+        <div className="author">
+          {" "}
+          <h2 className="quote-author"> ~ {quotes.author}</h2>
+        </div>
       </div>
       <button onClick={fetchData} disabled={loading}>
-        {loading ? "Loading..." : "Click to Change"}
+        {loading ? "Loading..." : "read another"}
       </button>
     </div>
   );
